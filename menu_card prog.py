@@ -22,6 +22,12 @@ while True:
         cart.append(food)
 print(cart)
 
+print("~~~ YOUR ORDER ~~~")
+
+value = menu.values()
 for i in cart:
-    total += menu.get(food)
-    print(food)
+    total += menu.get(i)
+    print(f"      {i}")
+
+print()
+print(f"Your Total is: {total:.2f}")
